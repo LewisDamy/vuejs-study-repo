@@ -40,21 +40,22 @@ vuejs-study-repo/
 ├── basics/
 │   ├── 01-hello-world/
 │   ├── 02-event-starting/
-│   └── 03-computed-properties/
+│   ├── 03-data-binding/
+│   └── 04-dynamic-styling/
 │
 ├── components/
 │   ├── 01-introduction/
 │   ├── 02-props-and-events/
 │   └── 03-slots-and-dynamic-components/
 │
-├── projects/
-│   ├── todo-app/
-│   └── weather-app/
-│
 ├── advanced/
+│   ├── 01-forms/
+│   ├── 01-server-side-rendering/
 │   ├── 01-vue-router/
+│   ├── 01-animations-transitions/
 │   ├── 02-vuex/
-│   └── 03-server-side-rendering/
+│   ├── 02-vue-and-authentication/
+│   └── 03-composition-api/
 │
 ├── public/
 │   └── images/
@@ -66,7 +67,6 @@ vuejs-study-repo/
 
 - `basics/`: Fundamental concepts and simple examples.
 - `components/`: Working with components, props, events, and more.
-- `projects/`: Complete projects to practice and apply your Vue.js knowledge.
 - `advanced/`: Advanced topics such as state management with Vuex, routing with Vue Router, and server-side rendering.
 - `public/`: Public assets used in examples and projects.
 
@@ -141,22 +141,23 @@ vuejs-study-repo/
 │
 ├── basics/
 │   ├── 01-hello-world/
-│   ├── 02-templates-and-data/
-│   └── 03-computed-properties/
+│   ├── 02-event-starting/
+│   ├── 03-data-binding/
+│   └── 04-dynamic-styling/
 │
 ├── components/
 │   ├── 01-introduction/
 │   ├── 02-props-and-events/
 │   └── 03-slots-and-dynamic-components/
 │
-├── projects/
-│   ├── todo-app/
-│   └── weather-app/
-│
 ├── advanced/
+│   ├── 01-forms/
+│   ├── 01-server-side-rendering/
 │   ├── 01-vue-router/
+│   ├── 01-animations-transitions/
 │   ├── 02-vuex/
-│   └── 03-server-side-rendering/
+│   ├── 02-vue-and-authentication/
+│   └── 03-composition-api/
 │
 ├── public/
 │   └── images/
@@ -168,7 +169,6 @@ vuejs-study-repo/
 
 - `basics/`: Fundamental concepts and simple examples.
 - `components/`: Working with components, props, events, and more.
-- `projects/`: Complete projects to practice and apply your Vue.js knowledge.
 - `advanced/`: Advanced topics such as state management with Vuex, routing with Vue Router, and server-side rendering.
 - `public/`: Public assets used in examples and projects.
 
