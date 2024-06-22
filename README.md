@@ -39,7 +39,7 @@ vuejs-study-repo/
 │
 ├── basics/
 │   ├── 01-hello-world/
-│   ├── 02-templates-and-data/
+│   ├── 02-event-starting/
 │   └── 03-computed-properties/
 │
 ├── components/

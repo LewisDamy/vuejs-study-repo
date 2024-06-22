@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vue Basics</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js" defer></script>
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h1>Vue Events</h1>
+		</header>
+		<section id="events">
+			<h2>Events in Action</h2>
+			<!-- Attribute v-on:<function> -->
+			<button v-on:click="add(5)">Add 5</button>
+			<button v-on:click="reduce(5)">Remove 5</button>
+			<!-- Event modifier for using the right click of mouse -->
+			<button v-on:click.right="reduce(5)">Remove 10 - right click</button>
+			<!-- Attribute v-once preserve the initial state -->
+            <p v-once>Starting Counter: {{ counter }}</p>
+			<p>Result: {{ counter }}</p>
+			<!-- Attribute v-on:<input> -->
+			<input
+				type="text"
+				v-on:input="setName($event, 'Lew')"
+				v-on:keyup.enter="confirmInput"
+			/>
+			<p>Your Name: {{ name }}</p>
+			<!-- '.prevent' prevent webpage from reloading after submit form -->
+			<!-- <form v-on:submit.prevent="submitEvent"> -->
+			<form v-on:submit="submitEvent">
+				<input type="text" />
+				<button>Sign Up</button>
+			</form>
+		</section>
+	</body>
+</html>
