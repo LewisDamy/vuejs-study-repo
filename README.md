@@ -30,6 +30,20 @@ cd vuejs-study-repo
 
 Make sure you have Node.js and npm (or yarn) installed on your system. If not, download and install them from [Node.js](https://nodejs.org/).
 
+### Running the vue-study-app
+
+1. Project setup
+
+```bash
+npm install
+```
+
+2. Compiles and hot-reloads for development
+
+```bash
+npm run serve
+```
+
 ## Repository Structure
 
 The repository is organized as follows:
@@ -44,10 +58,12 @@ vuejs-study-repo/
 │   ├── 04-dynamic-styling/
 │   └── 05-conditional-rendering/
 │
-├── components/
-│   ├── 01-introduction/
-│   ├── 02-props-and-events/
-│   └── 03-slots-and-dynamic-components/
+├── vue-study-app/
+│   ├── src/
+│       ├── components/
+|           ├── FriendsContact.vue
+|       ├── 02-props-and-events/
+│       └── 03-slots-and-dynamic-components/
 │
 ├── advanced/
 │   ├── 01-forms/
