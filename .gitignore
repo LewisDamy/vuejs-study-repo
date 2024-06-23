@@ -21,3 +21,4 @@ yarn-error.log*
 *.sw*
 
 /vue-study-app/node_modules/
+/vue-study-app/package-lock.json/
