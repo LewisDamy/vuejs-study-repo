@@ -41,7 +41,8 @@ vuejs-study-repo/
 │   ├── 01-hello-world/
 │   ├── 02-event-starting/
 │   ├── 03-data-binding/
-│   └── 04-dynamic-styling/
+│   ├── 04-dynamic-styling/
+│   └── 05-conditional-rendering/
 │
 ├── components/
 │   ├── 01-introduction/
