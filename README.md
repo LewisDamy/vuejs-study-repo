@@ -1,7 +1,3 @@
-Certainly! Below is a sample README file for a repository dedicated to studying Vue.js:
-
----
-
 # Vue.js Study Repository
 
 Welcome to the Vue.js Study Repository! This repository is a collection of notes, code snippets, projects, and resources to help you learn and master Vue.js. Whether you are a beginner or looking to deepen your understanding, this repo aims to provide valuable content to aid your learning journey.
@@ -60,10 +56,23 @@ vuejs-study-repo/
 │
 ├── vue-study-app/
 │   ├── src/
-│       ├── components/
-|           ├── FriendsContact.vue
-|       ├── 02-props-and-events/
-│       └── 03-slots-and-dynamic-components/
+│   │   └── components/
+|   │       ├── FriendExample/
+|   │       │   ├── App.vue
+|   │       │   └── FriendContact.vue
+|   │       │   └── main.js
+|   │       └── KnowledgeExample/
+|   │           ├── ActiveElement.vue
+|   │           ├── App.vue
+|   │           ├── KnowledgeBase.vue
+|   │           ├── KnowledgeElement.vue
+|   │           ├── KnowledgeGrid.vue
+|   │           └── main.js
+│   ├── .eslintrc.json
+│   ├── .gitignore
+│   ├── .babel.config.js
+│   ├── package-lock.json
+│   └── package.json
 │
 ├── advanced/
 │   ├── 01-forms/
@@ -77,15 +86,19 @@ vuejs-study-repo/
 ├── public/
 │   └── images/
 │
+├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
 ### Folders
 
+- `TBD`: To be done.
+<!--
 - `basics/`: Fundamental concepts and simple examples.
 - `components/`: Working with components, props, events, and more.
 - `advanced/`: Advanced topics such as state management with Vuex, routing with Vue Router, and server-side rendering.
-- `public/`: Public assets used in examples and projects.
+- `public/`: Public assets used in examples and projects. -->
 
 ## Resources
 
