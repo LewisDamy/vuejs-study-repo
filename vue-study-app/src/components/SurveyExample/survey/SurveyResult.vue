@@ -2,7 +2,8 @@
 	<li>
 		<p>
 			<span class="highlight">{{ name }}</span> rated the learning experience
-			<span :class="ratingClass">{{ rating }}</span>
+			<span :class="ratingClass">{{ rating }}</span
+			>.
 		</p>
 	</li>
 </template>
@@ -41,5 +42,9 @@ p {
 
 .rating--average {
 	color: #330075;
+}
+
+.rating--great {
+	color: #008327;
 }
 </style>

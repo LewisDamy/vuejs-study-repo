@@ -32,7 +32,7 @@
 					<label for="rating-average">Average</label>
 				</div>
 				<div class="form-control">
-					<input  
+					<input
 						type="radio"
 						id="rating-great"
 						value="great"
@@ -44,6 +44,9 @@
 				<p v-if="invalidInput">
 					One or more inputs fields are invalid. Please check your provided
 					data.
+				</p>
+				<p v-if="error">
+					{{ error }}
 				</p>
 				<div>
 					<base-button>Submit</base-button>
@@ -60,6 +63,7 @@ export default {
 			enteredName: "",
 			chosenRating: null,
 			invalidInput: false,
+			error: null,
 		};
 	},
 	emits: ["survey-submit"],
@@ -71,10 +75,36 @@ export default {
 			}
 			this.invalidInput = false;
 
-			this.$emit("survey-submit", {
-				userName: this.enteredName,
-				rating: this.chosenRating,
-			});
+			// this.$emit("survey-submit", {
+			// 	userName: this.enteredName,
+			// 	rating: this.chosenRating,
+			// });
+
+			this.error = null;
+			fetch(
+				"https://vue-http-demo-1b39f-default-rtdb.firebaseio.com/surveys.json",
+				{
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						name: this.enteredName,
+						rating: this.chosenRating,
+					}),
+				}
+			)
+				.then((response) => {
+					if (response.ok) {
+						// ...
+					} else {
+						throw new Error("Could not save data!");
+					}
+				})
+				.catch((error) => {
+					console.log(error);
+					this.error = "Something went wrong - try again later!";
+				});
 
 			this.enteredName = "";
 			this.chosenRating = null;
