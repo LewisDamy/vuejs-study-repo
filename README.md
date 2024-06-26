@@ -61,12 +61,20 @@ vuejs-study-repo/
 |   │       │   ├── App.vue
 |   │       │   └── FriendContact.vue
 |   │       │   └── main.js
-|   │       └── KnowledgeExample/
-|   │           ├── ActiveElement.vue
-|   │           ├── App.vue
-|   │           ├── KnowledgeBase.vue
-|   │           ├── KnowledgeElement.vue
-|   │           ├── KnowledgeGrid.vue
+|   │       ├── KnowledgeExample/
+|   │       │   ├── ActiveElement.vue
+|   │       │   ├── App.vue
+|   │       │   ├── KnowledgeBase.vue
+|   │       │   ├── KnowledgeElement.vue
+|   │       │   ├── KnowledgeGrid.vue
+|   │       │   └── main.js
+|   │       └── BadgeExample/
+|   │           ├── BadgeList.vue
+|   │           ├── BaseBadge.vue
+|   │           ├── BaseCard.vue
+|   │           ├── CourseGoals.vue
+|   │           ├── TheHeader.vue
+|   │           ├── UserInfo.vue
 |   │           └── main.js
 │   ├── .eslintrc.json
 │   ├── .gitignore
@@ -99,11 +107,16 @@ vuejs-study-repo/
 - `components/`: Working with components, props, events, and more.
 - `advanced/`: Advanced topics such as state management with Vuex, routing with Vue Router, and server-side rendering.
 - `public/`: Public assets used in examples and projects. -->
+- `FriendExample/`: props (parent => child communication, validation, supported values, dynamic values), custom events (child => parent communication, validation), emit
+- `KnowledgeExample/`: Provide + Inject (functions, methods)
+- `BadgeExample/`: Global & Local components, Slots (named, styles, scoped)
+- `GoalsExample/`: Dynamic Components, Teleporting elements, fragments
 
 ## Resources
 
-Here are some valuable resources to complement your learning:
+Here are the main resources:
 
+- [Vue - The Complete Guide (incl. Router & Composition API)](https://www.udemy.com/course/vuejs-2-the-complete-guide/)
 - [Vue.js Official Documentation](https://vuejs.org/v2/guide/)
 - [Vue Router Documentation](https://router.vuejs.org/)
 - [Vuex Documentation](https://vuex.vuejs.org/)
