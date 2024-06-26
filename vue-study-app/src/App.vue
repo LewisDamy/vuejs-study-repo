@@ -7,6 +7,12 @@
 			:info-text="activeUser.description"
 			:role="activeUser.role"
 		></user-info>
+		<course-goals #default="slotProps">
+			<!-- <template #default="slotProps"> used only when there's only one slot available -->
+			<h2>{{ slotProps.item }}</h2>
+			<p>{{ slotProps["another-prop"] }}</p>
+			<!-- </template> -->
+		</course-goals>
 	</div>
 </template>
 
@@ -14,12 +20,15 @@
 import TheHeader from "./components/BadgeExample/TheHeader.vue";
 import BadgeList from "./components/BadgeExample/BadgeList.vue";
 import UserInfo from "./components/BadgeExample/UserInfo.vue";
+import CourseGoals from "./components/BadgeExample/CourseGoals.vue";
 
 export default {
 	components: {
 		"the-header": TheHeader,
-		"badge-list": BadgeList,
-		"user-info": UserInfo,
+		// "badge-list": BadgeList === BadgeList,
+		BadgeList,
+		UserInfo,
+		CourseGoals,
 	},
 	data() {
 		return {
