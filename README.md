@@ -57,25 +57,35 @@ vuejs-study-repo/
 ├── vue-study-app/
 │   ├── src/
 │   │   └── components/
-|   │       ├── FriendExample/
-|   │       │   ├── App.vue
-|   │       │   └── FriendContact.vue
-|   │       │   └── main.js
-|   │       ├── KnowledgeExample/
-|   │       │   ├── ActiveElement.vue
-|   │       │   ├── App.vue
-|   │       │   ├── KnowledgeBase.vue
-|   │       │   ├── KnowledgeElement.vue
-|   │       │   ├── KnowledgeGrid.vue
-|   │       │   └── main.js
-|   │       └── BadgeExample/
-|   │           ├── BadgeList.vue
-|   │           ├── BaseBadge.vue
-|   │           ├── BaseCard.vue
-|   │           ├── CourseGoals.vue
-|   │           ├── TheHeader.vue
-|   │           ├── UserInfo.vue
-|   │           └── main.js
+│   │       ├── FriendExample/
+│   │       │   ├── App.vue
+│   │       │   └── FriendContact.vue
+│   │       │   └── main.js
+│   │       ├── KnowledgeExample/
+│   │       │   ├── ActiveElement.vue
+│   │       │   ├── App.vue
+│   │       │   ├── KnowledgeBase.vue
+│   │       │   ├── KnowledgeElement.vue
+│   │       │   ├── KnowledgeGrid.vue
+│   │       │   └── main.js
+│   │       ├── BadgeExample/
+│   │       │   ├── BadgeList.vue
+│   │       │   ├── BaseBadge.vue
+│   │       │   ├── BaseCard.vue
+│   │       │   ├── CourseGoals.vue
+│   │       │   ├── TheHeader.vue
+│   │       │   ├── UserInfo.vue
+│   │       │   └── main.js
+│   │       └── SurveyExample/
+│   │           ├── survey/
+│   │           │   ├── LearningSurvey.vue
+│   │           │   ├── SurveyResult.vue
+│   │           │   └── UserExperiences.vue
+│   │           ├── UI/
+│   │           │   ├── BaseButton.vue
+│   │           │   └── BaseCard.vue
+│   │           ├── App.vue
+│   │           └── main.js
 │   ├── .eslintrc.json
 │   ├── .gitignore
 │   ├── .babel.config.js
@@ -111,6 +121,7 @@ vuejs-study-repo/
 - `KnowledgeExample/`: Provide + Inject (functions, methods)
 - `BadgeExample/`: Global & Local components, Slots (named, styles, scoped)
 - `GoalsExample/`: Dynamic Components, Teleporting elements, fragments
+- `SurveyExample/`: HTTP Requests using fetch function (POST, GET), error handling, loading status message
 
 ## Resources
 
