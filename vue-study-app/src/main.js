@@ -5,13 +5,16 @@ import { createRouter, createWebHistory } from "vue-router";
 import TeamsList from "./components/RoutingExample/teams/TeamsList.vue";
 import UsersList from "./components/RoutingExample/users/UsersList.vue";
 import TeamMembers from "./components/RoutingExample/teams/TeamMembers.vue";
+import NotFound from "./components/RoutingExample/nav/NotFound.vue";
 
 const router = createRouter({
 	history: createWebHistory(),
 	routes: [
-		{ path: "/teams", component: TeamsList },
+		// { path: "/", redirect: "/teams" },
+		{ path: "/teams", component: TeamsList, alias: "/" },
 		{ path: "/users", component: UsersList },
 		{ path: "/teams/:teamId", component: TeamMembers, props: true },
+		{ path: "/:notFound(.*)", component: NotFound },
 	],
 });
 
