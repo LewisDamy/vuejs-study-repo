@@ -1,26 +1,21 @@
 <template>
 	<div>
-		<the-navigation @set-page="setActivePage"></the-navigation>
+		<the-navigation></the-navigation>
 		<main>
-			<component :is="activePage"></component>
+			<router-view></router-view>
 		</main>
 	</div>
 </template>
 
 <script>
 import TheNavigation from "./components/RoutingExample/nav/TheNavegation.vue";
-import TeamsList from "./components/RoutingExample/teams/TeamsList.vue";
-import UsersList from "./components/RoutingExample/users/UsersList.vue";
 
 export default {
 	components: {
 		TheNavigation,
-		TeamsList,
-		UsersList,
 	},
 	data() {
 		return {
-			activePage: "teams-list",
 			teams: [
 				{ id: "t1", name: "FrontEnd Engineers", members: ["u1", "u2"] },
 				{ id: "t2", name: "BackEnd Engineers", members: ["u1", "u2", "u3"] },
@@ -40,11 +35,6 @@ export default {
 			teams: this.teams,
 			users: this.users,
 		};
-	},
-	methods: {
-		setActivePage(page) {
-			this.activePage = page;
-		},
 	},
 };
 </script>
