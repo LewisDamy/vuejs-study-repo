@@ -30,13 +30,31 @@ const router = createRouter({
 		{ path: "/users", components: { default: UsersList, footer: UsersFooter } },
 		{ path: "/:notFound(.*)", component: NotFound },
 	],
-	scrollBehavior(to, from, savedPosition) {
+	scrollBehavior(
+		_,
+		_2,
+		savedPosition
+		// args -> to, from, savedPosition
+	) {
 		// console.log(to, from, savedPosition);
 		if (savedPosition) {
 			return savedPosition;
 		}
 		return { left: 0, top: 0 };
 	},
+});
+
+router.beforeEach((to, from, next) => {
+	console.log("Global beforeEach");
+	console.log(to, from);
+
+	next();
+});
+
+router.afterEach((to, from) => {
+	// sending analytics data
+	console.log("Global afterEach");
+	console.log(to, from);
 });
 
 const app = createApp(App);

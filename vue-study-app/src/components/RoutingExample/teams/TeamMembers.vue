@@ -44,8 +44,14 @@ export default {
 	created() {
 		// this.$route.path // /teams/t1
 		this.loadTeamMembers(this.teamId);
-        // acessing query params
+		// acessing query params
 		console.log(this.$route.query);
+	},
+	beforeRouteUpdate(to, from, next) {
+		console.log("TeamMembers Cmp beforeRouteUpdate");
+		console.log(to, from);
+		// this.loadTeamsMembers(to.params.teamId);
+		next();
 	},
 	watch: {
 		teamId(newId) {
