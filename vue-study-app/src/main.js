@@ -1,4 +1,4 @@
-import { createApp } from "vue";
+import { createApp, setDevtoolsHook } from "vue";
 
 import App from "./App.vue";
 import { createRouter, createWebHistory } from "vue-router";
@@ -30,6 +30,13 @@ const router = createRouter({
 		{ path: "/users", components: { default: UsersList, footer: UsersFooter } },
 		{ path: "/:notFound(.*)", component: NotFound },
 	],
+	scrollBehavior(to, from, savedPosition) {
+		// console.log(to, from, savedPosition);
+		if (savedPosition) {
+			return savedPosition;
+		}
+		return { left: 0, top: 0 };
+	},
 });
 
 const app = createApp(App);
