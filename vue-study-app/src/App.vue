@@ -34,7 +34,8 @@ export default {
 			// MUTATION -> this.$store.commit({
 			// ACTION -> this.$store.dispatch({
 			this.$store.dispatch({
-				type: "increase",
+                // -> format to access store using module namespacing
+				type: "numbers/increase",
 				value: 10,
 			});
 		},

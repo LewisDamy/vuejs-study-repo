@@ -9,7 +9,8 @@ export default {
 		// counter() {
 		// 	return this.$store.getters.finalCounter;
 		// },
-		...mapGetters(["finalCounter"]),
+		// -> format to access store using module namespacing
+		...mapGetters(["numbers", "finalCounter"]),
 	},
 };
 </script>

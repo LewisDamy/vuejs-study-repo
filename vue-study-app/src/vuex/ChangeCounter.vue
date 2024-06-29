@@ -13,7 +13,8 @@ export default {
 		// 	// this.$store.commit("increment"); -> MUTATION
 		// 	this.$store.dispatch("increment");
 		// },
-		...mapActions(["increment", "increase"]),
+		// -> format to access store using module namespacing
+		...mapActions("numbers", ["increment", "increase"]),
 	},
 };
 </script>

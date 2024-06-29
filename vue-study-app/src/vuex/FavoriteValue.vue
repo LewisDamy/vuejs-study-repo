@@ -9,7 +9,9 @@
 export default {
 	computed: {
 		counter() {
-			return this.$store.getters.normalizedCounter;
+			// return this.$store.getters.normalizedCounter;
+            // -> format to access store using module namespacing
+			return this.$store.getters["numbers/normalizedCounter"];
 		},
 	},
 };
