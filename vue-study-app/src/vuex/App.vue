@@ -14,11 +14,11 @@
 </template>
 
 <script>
-import BaseContainer from "./vuex/BaseContainer.vue";
-import ChangeCounter from "./vuex/ChangeCounter.vue";
-import FavoriteValue from "./vuex/FavoriteValue.vue";
-import TheCounter from "./vuex/TheCounter.vue";
-import UserAuth from "./vuex/UserAuth.vue";
+import BaseContainer from "./BaseContainer.vue";
+import ChangeCounter from "./ChangeCounter.vue";
+import FavoriteValue from "./FavoriteValue.vue";
+import TheCounter from "./TheCounter.vue";
+import UserAuth from "./UserAuth.vue";
 
 export default {
 	components: {
