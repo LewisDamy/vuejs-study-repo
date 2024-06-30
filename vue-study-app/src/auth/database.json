@@ -1,0 +1,27 @@
+{
+	"coaches": {
+		"c1": {
+			"id": "c1",
+			"firstName": "Luis",
+			"lastName": "D",
+			"areas": ["frontend", "backend", "career"],
+			"description": "I'm a full stack developer with a passion for Vue.js",
+			"hourlyRate": 30
+		},
+		"c2": {
+			"id": "c2",
+			"firstName": "John",
+			"lastName": "Doe",
+			"areas": ["frontend", "backend"],
+			"description": "I'm a full stack developer with a passion for React",
+			"hourlyRate": 25
+		}
+	},
+	"requests": {
+		"c2": {
+			"firstName": "Luis",
+			"lastName": "D",
+			"email": "luis@damy.com"
+		}
+	}
+}
