@@ -82,7 +82,7 @@ export default {
 
 			this.error = null;
 			fetch(
-				"https://vue-http-demo-1b39f-default-rtdb.firebaseio.com/surveys.json",
+				"https://vue-project.firebaseio.com/surveys.json",
 				{
 					method: "POST",
 					headers: {
