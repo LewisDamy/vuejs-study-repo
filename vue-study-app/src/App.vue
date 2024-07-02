@@ -1,13 +1,8 @@
 <template>
 	<section class="container">
-		<!-- <h2>{{ user.name }}</h2>
-		<h2>{{ user.age }}</h2> -->
-		<h2>
-			{{ userName }}
-		</h2>
-		<h2>
-			{{ age }}
-		</h2>
+		<h2>{{ user.name }}</h2>
+		<h2>{{ user.age }}</h2>
+		<button @click="setAge">Change Age</button>
 	</section>
 </template>
 
@@ -16,29 +11,17 @@ import { reactive, toRefs } from "vue";
 
 export default {
 	setup() {
-		// const uName = ref("Me");
 		const user = reactive({
 			name: "Me",
 			age: 23,
 		});
 
-		// setTimeout(() => {
-		// 	uName.value = "Lew";
-		// }, 2000);
-		setTimeout(() => {
-			user.name = "Lew";
+		const setNewAge = () => {
 			user.age = 24;
-		}, 2000);
+		};
 
-		const userRefs = toRefs(user);
-
-		return { user: user, userName: userRefs.name, age: userRefs.age };
+		return { user: user, setAge: setNewAge };
 	},
-	// data() {
-	// 	return {
-	// 		userName: "Me",
-	// 	};
-	// },
 };
 </script>
 
