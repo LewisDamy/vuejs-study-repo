@@ -6,16 +6,18 @@
 </template>
 
 <script>
-import { computed } from "vue";
+import { computed, inject } from "vue";
 
 export default {
-	props: ["firstName", "lastName", "age"],
+	props: ["firstName", "lastName"],
 	setup(props) {
 		const uName = computed(() => {
 			return props.firstName + " " + props.lastName;
 		});
 
-		return { userName: uName };
+		const uAge = inject("userAge");
+
+		return { userName: uName, age: uAge };
 	},
 };
 </script>
